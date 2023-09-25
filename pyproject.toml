@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "macaw"
+version = "0.1.1"
+description = "MACAW Env Requirement"
+authors = ["David Zheng"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = "*"
+numpy = "^1.24.2"
+higher = "^0.2.1"
+gym = "0.12.1"
+imageio = "^2.9.0"
+mujoco-py = "^2.0.2"
+tensorboard = "^2.6.0"
+stable-baselines = "^2.10.0"
+rand_param_envs = { git = "https://github.com/dennisl88/rand_param_envs.git", rev = "4d1529d61ca0d65ed4bd9207b108d4a4662a4da0#egg=rand_param_envs" }
+mpi4py = "^3.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
